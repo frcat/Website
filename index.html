@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/">
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width,minimum-scale=0.1">
+	<meta name="theme-color" content="#2f3136">
+	<meta property="og:description" content="Official Website Of DrNoSleep">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css" />
+	<script src="./script.js">
+
+	</script>
+	<title>​​​</title>
+	<link rel="shortcut icon" href="./blank.png" />
+</head>
+
+<body>
+<profile id="profile" class="">
+	<section>
+		<div class="container">
+			<div class="profile">
+				<div class="pro-header">
+					<div class="pro-avatar"><img src="./pfp.png" alt="avatar-username"> <span class="pro-status"> <i class="fas fa-play-circle"></i> </span> </div>
+                  <div class="pro-username"> <span class="text-username">DrNoSleep</span><span class="text-discrim">#0002</span> </div>
+               </div>
+               <div class="pro-activity">
+                  <div class="title-activity"> LIVE ON TWITCH </div>
+                  <div class="stream-activity">
+                     <div class="playing-stream">
+                        <img src="./twitch.png">
+                        <div> <span class="title">t.tv/</span> <span class="subtitle">DrNoSleepUWU</span> </div>
+                     </div>
+                  </div>
+                  <a href="https://twitch.tv/DrNoSLeepUWU" style="color:inherit;">
+                     <div class="stream-buttom"> <span>Twitch</span> </div>
+                  </a>
+                  <a href="https://discord.gg/ZnxpW3X6Jf" style="color:inherit;">
+                     <div class="stream-buttom"> <span>Discord</span> </div>
+                  </a>
+               </div>
+               <div class="pro-body">
+                  <div class="pro-content">
+                     <div class="title-body">NO ROLES</div>
+                     <div class="roles-body"> </div>
+                  </div>
+               </div>
+               <div class="pro-footer">
+                  <div class="content-footer">
+                     <div class="title-footer">NOTE</div>
+                     <div class="subtitle-footer"><textarea id="note" type="text" placeholder="Click to add a note" rows="1"></textarea></div>
+                     <div class="stream-buttom" onclick="toggleModal()"> <span>Send a message</span> </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+</profile>
+<!-- This is the modal, just hide it all when not active-->
+      <section id="messageModal" class="hide">
+<form>
+<div class="form-footer">
+  <div align="center">
+<img src="./x.png" align="right" onclick="toggleModal()"></img><h3 style="color:white">Send a message to Mr. NoSleep</h3>
+<input id="ava_url" type="text" placeholder="Image URL"><input id="name" type="text" placeholder="Name"><input id="msg" type="text" placeholder="Message @DrNoSleep#0002" required> 
+<div class="stream-buttom" onclick="sendMessage()" style="background-color:#5865F2"><span style="color:white">Submit</span></div>
+</div>
+</form>
+      </section>
+</html>
