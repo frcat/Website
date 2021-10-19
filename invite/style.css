@@ -1,0 +1,33 @@
+@font-face{
+    font-family:Whitney;
+    font-weight:300;
+    src:url(https://nosleepthemes.github.io/themes/nordnshapes/Discord.ttf) format('truetype');
+}
+html{
+  font-family: Whitney;
+  background-color: #36393f;
+}
+*{
+    color: #fff;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+section, imghere {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2c2e31;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 25vh;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+}
+* {
+  font-size: 1vw;
+  size: 1vw;
+}
