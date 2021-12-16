@@ -1,6 +1,9 @@
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
 
+var score_base = 0
+document.title = 0
+
 var grid = 16;
 var snake = {
   x: 160,
@@ -76,6 +79,10 @@ function loop() {
       apple.y = getRandomInt(0, 25) * grid;
       var audio = new Audio('beep.mp3');
       audio.play();
+      var score_new = score_base + 1
+      score_base = score_new
+      document.title = score_base
+      
     }
 
     // check collision with all cells after this one (modified bubble sort)
@@ -83,6 +90,9 @@ function loop() {
 
       // collision. reset game
       if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+        console.log("Score: " + score_base)
+        score_base = 0
+        document.title = score_base
         snake.x = 160;
         snake.y = 160;
         snake.cells = [];
