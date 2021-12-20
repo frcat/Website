@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
+  background-position: right;
   color: rgba(255, 255, 255, 0.829);
 }
 .center {
