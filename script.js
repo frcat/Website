@@ -34,5 +34,4 @@ async function onld() {
 };
 function redir(link) {window.location.href = link}
 lanyard({userId: "811770910624579584",socket: true,onPresenceUpdate:()=>{console.log("Updating");onld();}})
-//anti IE
 if(window.document.documentMode){alert("Stop using IE ffs");document.body.style = "display:none";document.title="Anti IE"window.location.replace("https://www.aspy.dev/internal/IE.html")}
