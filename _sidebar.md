@@ -1,4 +1,4 @@
-* [Docs](https://french-cat.github.io/docs/)
+* [Docs](https://docs.frcat.win)
 * [Social links](social)
 * [PC Status](pcstatus)
 * [Website Creddits](creddit)
