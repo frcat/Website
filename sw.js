@@ -12,7 +12,6 @@ const HOSTNAME_WHITELIST = [
   'fonts.gstatic.com',
   'fonts.googleapis.com',
   'cdn.jsdelivr.net',
-  'docs.cumcord.com',
   'use.fontawesome.com'
 ]
 
