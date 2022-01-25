@@ -1,20 +1,4 @@
-<script>
-fetch("https://is-online.french-cat.repl.co/")
-    .then((response) => {
-        return response.text();
-    })
-    .then((resp) => {
-        ooo(resp);
-    });
-function ooo(e) {
-    if (e == 200) {
-        document.getElementById("value").innerText = "PC: On";
-    }
-}
-</script>
 # PC Status
-
-#  <div id="value">PC: Off</div>
 
 # RAM: 16.0 GB
 
