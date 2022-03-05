@@ -14,7 +14,7 @@ body {
  animation:1s ease-out var(--delay) 1 transitionAnimation;
  animation-fill-mode:forwards;
  background-repeat:no-repeat;
- background-size:cover;
+ background-color:black;
  position:relative
 }
 #profilePicture,
