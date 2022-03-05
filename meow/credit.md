@@ -1,4 +1,4 @@
-# Website Creddits
+# Website Credits
 
 # <a href="https://docs.cumcord.com/">cumcord docs: CSS</a>
 
