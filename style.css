@@ -74,7 +74,7 @@ body {
 #hashtag {
     position: relative;
     padding-bottom: 20px;
-    color: var(--accentColor);
+    color: white;
     font-size: 1rem;
     display: block;
     font-family: var(--font);
@@ -83,9 +83,9 @@ body {
     overflow: hidden;
     background: linear-gradient(
         90deg,
-        var(--bgColor),
-        var(--accentColor),
-        var(--bgColor)
+        black,
+        white,
+        black
     );
     background-repeat: no-repeat;
     background-size: 80%;
@@ -154,9 +154,9 @@ body {
     font-family: Baskerville, Georgia, serif;
     font-style: italic;
     position: flex;
-    color: var(--accentColor);
+    color: white;
     padding: 20px;
-    background-color: var(--bgColor);
+    background-color: black;
     text-align: center;
     font-size: 1rem;
 }
