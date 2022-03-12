@@ -1160,5 +1160,4 @@ particlesJS.load('body', 'particlesjs-config.json', function () {
 });
 // Quotes
 var quotes = ["", "The charm of horror only tempts the strong.", "Hurting someone’s feelings is as easy as throwing a rock in the ocean, but do you know how deep that rock goes?", "Believe nothing you hear, and only one half that you see.", "There is something at work in my soul, which I do not understand.", "So, this is my life. And I want you to know that I am both happy and sad and I'm still trying to figure out how that could be.", "You’ve changed me forever. And I’ll never forgive nor forget you.", "My room is so quiet and empty it hurts.", "This inhuman place creates human monsters.", "HTML is not a programming language."];
-var nmbr = Math.floor(Math.random() * quotes.length) + 1
-document.getElementsByClassName("popup-quote")[0].innerText = quotes[nmbr]
+document.getElementsByClassName("popup-quote")[0].innerText = quotes[Math.floor(Math.random() * quotes.length) + 1]
