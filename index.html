@@ -20,7 +20,8 @@
     <body>
         <script>
             const gpcValue = navigator.globalPrivacyControl;
-            if (gpcValue) {
+            const dntValue = navigator.doNotTrack == "1"
+            if (gpcValue || dntValue) {
                 window.location.href = "/gpc";
             } else {
                 window.location.href = "/nogpc";
