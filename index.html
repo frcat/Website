@@ -1,0 +1,13 @@
+<style>
+    * {
+        background-color: black;
+    }
+</style>
+<script>
+    const gpcValue = navigator.globalPrivacyControl;
+    if (gpcValue) {
+        window.location.href = "/gpc";
+    } else {
+        window.location.href = "/nogpc";
+    }
+</script>
