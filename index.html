@@ -37,9 +37,9 @@
                         const gpcValue = navigator.globalPrivacyControl;
                         const dntValue = navigator.doNotTrack == "1"
                         if (gpcValue || dntValue) {
-                            window.location.href = "/gpc/?ref="getUrlParameter("ref");
+                            window.location.href = "/gpc/?ref=" + getUrlParameter("ref");
                         } else {
-                            window.location.href = "/nogpc/?ref="getUrlParameter("ref");
+                            window.location.href = "/nogpc/?ref=" + getUrlParameter("ref");
                         }
         </script>
     </body>
