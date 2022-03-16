@@ -77,14 +77,16 @@
                 ></script>
                 <script src="index.js"></script>
                 <script data-goatcounter="https://frcat.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-                <script>
-                    var t = setInterval(function () {
-                        if (window.goatcounter && window.goatcounter.visit_count) {
-                            clearInterval(t);
-                            window.goatcounter.visit_count({ append: "body", style: `#gcvc { fill: transparent; }` });
-                        }
-                    }, 100);
-                </script>
+<div>Number of visitors: <div id="stats"></div></div>
+
+<script>
+    var r = new XMLHttpRequest();
+    r.addEventListener('load', function() {
+        document.querySelector('#stats').innerText = JSON.parse(this.responseText).count_unique
+    })
+    r.open('GET', 'https://frcat.goatcounter.com/counter/' + encodeURIComponent(location.pathname) + '.json')
+    r.send()
+</script>
             </div>
         </div>
     </body>
