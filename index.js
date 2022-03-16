@@ -600,3 +600,10 @@ var quotes = [
     "HTML is not a programming language.",
 ];
 document.getElementsByClassName("popup-quote")[0].innerText = quotes[Math.floor(Math.random() * quotes.length) + 1];
+// Goat Visitor Count
+var t = setInterval(function () {
+    if (window.goatcounter && window.goatcounter.visit_count) {
+        clearInterval(t);
+        window.goatcounter.visit_count({ append: "body" });
+    }
+}, 100);
