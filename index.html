@@ -77,6 +77,14 @@
                 ></script>
                 <script src="index.js"></script>
                 <script data-goatcounter="https://frcat.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+                <script>
+                    var t = setInterval(function () {
+                        if (window.goatcounter && window.goatcounter.visit_count) {
+                            clearInterval(t);
+                            window.goatcounter.visit_count({ append: "body" });
+                        }
+                    }, 100);
+                </script>
             </div>
         </div>
     </body>
