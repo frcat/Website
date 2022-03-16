@@ -23,7 +23,7 @@
                         <div class="popup-photo">
                             <a href="https://dcdn.dstn.to/avatars/811770910624579584" target="_blank"> </a>
                         </div>
-                        <div class="popup-quote"></div>
+                        <div class="popup-quote"><div id="stats"></div></div>
                         <a class="popup-close" onclick="history.back()">&times;</a>
                     </div>
                 </div>
@@ -77,15 +77,10 @@
                 ></script>
                 <script src="index.js"></script>
                 <script data-goatcounter="https://frcat.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-                <div>
-                    Number of visitors:
-                    <div id="stats"></div>
-                </div>
-
-                <script>
+ <script>
                     var r = new XMLHttpRequest();
                     r.addEventListener("load", function () {
-                        document.querySelector("#stats").innerText = JSON.parse(this.responseText).count_unique;
+                        document.querySelector("#stats").innerText = "Unique Visits: " + JSON.parse(this.responseText).count_unique + "<br>Total Visits: " + JSON.parse(this.responseText).count
                     });
                     r.open("GET", "https://frcat.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json");
                     r.send();
