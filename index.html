@@ -19,13 +19,28 @@
     </head>
     <body>
         <script>
-            const gpcValue = navigator.globalPrivacyControl;
-            const dntValue = navigator.doNotTrack == "1"
-            if (gpcValue || dntValue) {
-                window.location.href = "/gpc";
-            } else {
-                window.location.href = "/nogpc";
-            }
+                        var getUrlParameter = function getUrlParameter(sParam) {
+                var sPageURL = window.location.search.substring(1),
+                    sURLVariables = sPageURL.split('&'),
+                    sParameterName,
+                    i;
+
+                for (i = 0; i < sURLVariables.length; i++) {
+                    sParameterName = sURLVariables[i].split('=');
+
+                    if (sParameterName[0] === sParam) {
+                        return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                    }
+                }
+                return false;
+            };
+                        const gpcValue = navigator.globalPrivacyControl;
+                        const dntValue = navigator.doNotTrack == "1"
+                        if (gpcValue || dntValue) {
+                            window.location.href = "/gpc/?ref="getUrlParameter("ref");
+                        } else {
+                            window.location.href = "/nogpc/?ref="getUrlParameter("ref");
+                        }
         </script>
     </body>
 </html>
