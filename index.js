@@ -586,3 +586,10 @@ var pJS = function (e, a) {
 particlesJS.load("body", "particlesjs-config.json", function () {
     console.log("callback - particles.js config loaded");
 });
+// Visits
+var r = new XMLHttpRequest();
+r.addEventListener("load", function () {
+    document.querySelector("#stats").innerText = "Unique Visits: " + JSON.parse(this.responseText).count_unique + "\nTotal Visits: " + JSON.parse(this.responseText).count;
+});
+r.open("GET", "https://frcat.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json");
+r.send();
