@@ -6,7 +6,7 @@ lanyard({
 });
 // work with ws
 function user(base) {
-    if (typeof base.activities.find((act) => act.type == 1).url == "undefined") {
+    if (typeof base.activities.find((act) => act.type == 1).url == undefined) {
         statusborder();
     } else {
         statusborder();
