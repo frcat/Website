@@ -7,7 +7,7 @@ lanyard({
 // work with ws
 function user(base){
     if (base.data.activities.find(act => act.type == 1).url) {
-        return "live"
+        document.getElementById("profilePicture").href = base.data.activities.find(act => act.type == 1).url
     } else {
         return base.data.discord_status
     }
