@@ -1,6 +1,6 @@
 // sub to lanyard ws
 lanyard({
-    userId: "94490510688792576",
+    userId: "811770910624579584",
     socket: true,
     onPresenceUpdate: user, // presenceData
 });
