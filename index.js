@@ -11,11 +11,11 @@ function user(base) {
     } else {
         statusborder(base);
     }
-    function liveborder() {
+    function liveborder(base) {
         document.getElementById("profilePicture").href = base.activities.find((act) => act.type == 1).url;
         document.getElementById("pfp").style = "border: 5px solid #593695";
     }
-    function statusborder() {
+    function statusborder(base) {
         const status = base.data.discord_status;
         if (status == "online") {
             document.getElementById("pfp").style = "border: 5px solid #3BA55D";
