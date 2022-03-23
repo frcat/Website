@@ -28,7 +28,7 @@ function user(base) {
         }
     }
     function isLive() {
-        if (base.activities.find((act) => act.type == 1).url) {
+        if (base.activities.find((act) => act.type == 1)) {
             return true;
         } else {
             return false;
