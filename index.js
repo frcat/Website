@@ -6,7 +6,7 @@ lanyard({
 });
 // work with ws
 function user(base) {
-    if (base.activities.find((act) => act.type == 1).url = "https://www.twitch.tv/afrenchcat") {
+    if (base.activities.find((act) => act.type == 1).url == "https://www.twitch.tv/afrenchcat") {
         document.getElementById("profilePicture").href = base.activities.find((act) => act.type == 1).url;
         document.getElementById("pfp").style = "border: 5px solid #593695";
     } else {
