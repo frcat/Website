@@ -7,7 +7,7 @@ lanyard({
 // work with ws
 function user(base) {
     if (isLive(base)) {
-        live(base);
+        liveborder(base);
     } else {
         statusborder(base);
     }
