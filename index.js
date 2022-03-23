@@ -6,8 +6,8 @@ lanyard({
 });
 // work with ws
 function user(base) {
-    if (base.data.activities.find((act) => act.type == 1).url) {
-        document.getElementById("profilePicture").href = base.data.activities.find((act) => act.type == 1).url;
+    if (base.activities.find((act) => act.type == 1).url) {
+        document.getElementById("profilePicture").href = base.activities.find((act) => act.type == 1).url;
         document.getElementById("pfp").style = "border: 5px solid #593695";
     } else {
         const status = base.data.discord_status;
