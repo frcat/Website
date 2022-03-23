@@ -6,8 +6,8 @@ lanyard({
 });
 // work with ws
 function user(base) {
-    if (typeof base.activities.find((act) => act.type == 1).url == undefined) {
-        statusborder();
+    if (isLive()) {
+        live();
     } else {
         statusborder();
     }
@@ -25,6 +25,13 @@ function user(base) {
             document.getElementById("pfp").style = "border: 5px solid #ED4245";
         } else {
             document.getElementById("pfp").style = "border: 5px solid #747F8D";
+        }
+    }
+    function isLive() {
+        if (base.activities.find((act) => act.type == 1).url) {
+            return true;
+        } else {
+            return false;
         }
     }
 }
