@@ -7,9 +7,9 @@ lanyard({
 // work with ws
 function user(base) {
     if (isLive()) {
-        live();
+        live(base);
     } else {
-        statusborder();
+        statusborder(base);
     }
     function liveborder() {
         document.getElementById("profilePicture").href = base.activities.find((act) => act.type == 1).url;
