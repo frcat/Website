@@ -22,7 +22,7 @@ function user(base) {
             document.getElementById("pfp").style = "border: 5px solid #3BA55D";
         } else if (status == "idle") {
             document.getElementById("pfp").style = "border: 5px solid #FAA81A";
-        } else if ((status = "dnd")) {
+        } else if ((status == "dnd")) {
             document.getElementById("pfp").style = "border: 5px solid #ED4245";
         } else {
             document.getElementById("pfp").style = "border: 5px solid #747F8D";
