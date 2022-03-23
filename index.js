@@ -6,10 +6,16 @@ lanyard({
 });
 // work with ws
 function user(base) {
-    if (base.activities.find((act) => act.type == 1).url == "https://www.twitch.tv/afrenchcat") {
+    if (typeof base.activities.find((act) => act.type == 1).url == "undefined") {
+        statusborder();
+    } else {
+        statusborder();
+    }
+    function liveborder() {
         document.getElementById("profilePicture").href = base.activities.find((act) => act.type == 1).url;
         document.getElementById("pfp").style = "border: 5px solid #593695";
-    } else {
+    }
+    function statusborder() {
         const status = base.data.discord_status;
         if (status == "online") {
             document.getElementById("pfp").style = "border: 5px solid #3BA55D";
