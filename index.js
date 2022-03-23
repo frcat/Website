@@ -13,10 +13,6 @@ function status(status) {
         document.getElementById("pfp").style = "border: 5px solid #747F8D";
     }
 }
-// particles.js init
-particlesJS.load("body", "particlesjs-config.json", function () {
-    console.log("callback - particles.js config loaded");
-});
 // Visits
 var r = new XMLHttpRequest();
 r.addEventListener("load", function () {
