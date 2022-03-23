@@ -1,16 +1,15 @@
-// PFP Status from discord
-fetch("https://api.lanyard.rest/v1/users/811770910624579584")
-    .then((response) => response.json())
-    .then((data) => status(data.data.discord_status));
-function status(status) {
-    if (status == "online") {
-        document.getElementById("pfp").style = "border: 5px solid #3BA55D";
-    } else if (status == "idle") {
-        document.getElementById("pfp").style = "border: 5px solid #FAA81A";
-    } else if ((status = "dnd")) {
-        document.getElementById("pfp").style = "border: 5px solid #ED4245";
+// sub to lanyard ws
+lanyard({
+    userId: "811770910624579584",
+    socket: true,
+    onPresenceUpdate: user // presenceData
+})
+// work with ws
+function user(base){
+    if (base.data.activities.find(act => act.type == 1).url) {
+        return "live"
     } else {
-        document.getElementById("pfp").style = "border: 5px solid #747F8D";
+        return base.data.discord_status
     }
 }
 // Visits
