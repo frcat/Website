@@ -16,6 +16,7 @@ function user(base) {
         document.getElementById("pfp").style = "border: 5px solid #593695";
     }
     function statusborder(base) {
+        console.log(base)
         const status = base.data.discord_status;
         if (status == "online") {
             document.getElementById("pfp").style = "border: 5px solid #3BA55D";
