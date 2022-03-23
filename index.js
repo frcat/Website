@@ -6,7 +6,7 @@ lanyard({
 });
 // work with ws
 function user(base) {
-    if (isLive()) {
+    if (isLive(base)) {
         live(base);
     } else {
         statusborder(base);
@@ -27,7 +27,7 @@ function user(base) {
             document.getElementById("pfp").style = "border: 5px solid #747F8D";
         }
     }
-    function isLive() {
+    function isLive(base) {
         if (base.activities.find((act) => act.type == 1)) {
             return true;
         } else {
