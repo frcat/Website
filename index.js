@@ -43,3 +43,5 @@ r.addEventListener("load", function () {
 });
 r.open("GET", "https://gc.frcat.workers.dev/json");
 r.send();
+// Alert
+alert("Hello there, I am not sure how much longer I can do this..\nI have disabled my Twitch and don't think ill be streaming anymore.\nAnd im sorry. Ill try to be active in Cora's server (I have replaced the discord link)")
