@@ -1,23 +1,10 @@
-// sub to lanyard ws
-lanyard({
-    userId: "811770910624579584",
-    socket: true,
-    onPresenceUpdate: user, // presenceData
-});
+// fetch status
+fetch("https://canary.discord.com/api/guilds/957380894186946623/widget.json")
+  .then(response => response.json())
+  .then(data => user(data.members[0].status));
+
 // work with ws
-function user(base) {
-    if (isLive(base)) {
-        liveborder(base);
-    } else {
-        statusborder(base);
-    }
-    function liveborder(base) {
-        document.getElementById("profilePicture").href = base.activities.find((act) => act.type == 1).url;
-        document.getElementById("pfp").style = "border: 5px solid #593695";
-    }
-    function statusborder(base) {
-        console.log(base)
-        const status = base.discord_status;
+function user(status) {
         if (status == "online") {
             document.getElementById("pfp").style = "border: 5px solid #3BA55D";
         } else if (status == "idle") {
@@ -27,14 +14,7 @@ function user(base) {
         } else {
             document.getElementById("pfp").style = "border: 5px solid #747F8D";
         }
-    }
-    function isLive(base) {
-        if (base.activities.find((act) => act.type == 1)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+
 }
 // Visits
 var r = new XMLHttpRequest();
