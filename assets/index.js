@@ -21,5 +21,5 @@ var r = new XMLHttpRequest();
 r.addEventListener("load", function () {
     document.querySelector("#stats").innerText = "Unique Visits: " + JSON.parse(this.responseText).count_unique + "\nTotal Visits: " + JSON.parse(this.responseText).count;
 });
-r.open("GET", "https://gc.frcat.workers.dev/json");
+r.open("GET", "https://frcat.goatcounter.com/counter//.json");
 r.send();
