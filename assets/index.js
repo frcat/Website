@@ -23,3 +23,15 @@ r.addEventListener("load", function () {
 });
 r.open("GET", "https://frcat.goatcounter.com/counter//.json");
 r.send();
+// Context menu
+      const myContextMenu = new window.VanillaContextMenu({
+        scope: document.body,
+        menuItems: [
+          {
+            label: 'Refresh Status',
+            callback: status,
+            preventCloseOnClick: false,
+          },
+        ],
+        preventCloseOnClick: true,
+      });
