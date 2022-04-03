@@ -1,8 +1,7 @@
 // Make fetch more easy
 function sFetch(url) {
     fetch(url)
-        .then((response) => response.json())
-        .then((data) => return data);
+        .then((response) => return response.json())
 }
 // fetch status
 function status() {
