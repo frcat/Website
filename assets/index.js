@@ -1,13 +1,8 @@
-// Make fetch more easy
-function sFetch(url) {
-    fetch(url)
-        .then((response) => {return response.json()})
-}
 // fetch status
-async function status() {
-    const temp = await sFetch("https://canary.discord.com/api/guilds/957380894186946623/widget.json")
-    console.log(sFetch("https://canary.discord.com/api/guilds/957380894186946623/widget.json"))
-    user(temp.data.members[0].status)
+function status() {
+    fetch("https://canary.discord.com/api/guilds/957380894186946623/widget.json")
+        .then((response) => response.json())
+        .then((data) => user(data.members[0].status));
 }
 status();
 // work with status
@@ -34,7 +29,8 @@ const myContextMenu = new window.VanillaContextMenu({
         {
             label: "Refresh Status",
             callback: status,
+            preventCloseOnClick: false,
         },
     ],
-    preventCloseOnClick: false,
+    preventCloseOnClick: true,
 });
