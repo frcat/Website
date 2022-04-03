@@ -30,5 +30,5 @@ const myContextMenu = new window.VanillaContextMenu({
     fetch("https://api.statify.live/youtube/UCh--dzF5q_VM5HCrRJN1t2w")
         .then((response) => response.json())
         .then((data) => {
-    //
+    document.getElementById("youtube").title = data
     });
