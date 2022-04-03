@@ -1,5 +1,5 @@
 // Make fetch more easy
-function sFetch(url)
+function sFetch(url) {
     fetch(url)
         .then((response) => response.json())
         .then((data) => return data);
