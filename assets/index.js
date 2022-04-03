@@ -1,8 +1,10 @@
 // fetch status
+function status() {
 fetch("https://canary.discord.com/api/guilds/957380894186946623/widget.json")
   .then(response => response.json())
   .then(data => user(data.members[0].status));
-
+}
+status()
 // work with status
 function user(status) {
         if (status == "online") {
