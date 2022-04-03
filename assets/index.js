@@ -4,8 +4,8 @@ function sFetch(url) {
         .then((response) => {return response.json()})
 }
 // fetch status
-function status() {
-    const temp = sFetch("https://canary.discord.com/api/guilds/957380894186946623/widget.json")
+async function status() {
+    const temp = await sFetch("https://canary.discord.com/api/guilds/957380894186946623/widget.json")
     user(temp.data.members[0].status)
 }
 status();
