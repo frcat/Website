@@ -6,6 +6,7 @@ function sFetch(url) {
 // fetch status
 async function status() {
     const temp = await sFetch("https://canary.discord.com/api/guilds/957380894186946623/widget.json")
+    console.log(temp)
     user(temp.data.members[0].status)
 }
 status();
