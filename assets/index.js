@@ -15,13 +15,6 @@ function user(status) {
         document.getElementById("pfp").style = "border: 5px solid #ED4245";
     }
 }
-// Visits
-var r = new XMLHttpRequest();
-r.addEventListener("load", function () {
-    document.querySelector("#stats").innerText = "Unique Visits: " + JSON.parse(this.responseText).count_unique + "\nTotal Visits: " + JSON.parse(this.responseText).count;
-});
-r.open("GET", "https://frcat.goatcounter.com/counter//.json");
-r.send();
 // Context menu
 const myContextMenu = new window.VanillaContextMenu({
     scope: document.body,
