@@ -16,6 +16,7 @@ body {
     background-image: url(space.svg);
     background-size: 300px;
     background-repeat: repeat;
+    padding: 0;
 }
 #profilePicture,
 #profilePicture img {
