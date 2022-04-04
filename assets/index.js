@@ -40,5 +40,10 @@ const myContextMenu = new window.VanillaContextMenu({
     fetch("https://api.statify.live/twitch/aFrenchCat")
         .then((response) => response.json())
         .then((data) => {
+    document.getElementById("twitch").title = data
+    });
+    fetch("https://api.statify.live/twitter/Fr3nch_C4t")
+        .then((response) => response.json())
+        .then((data) => {
     document.getElementById("twitter").title = data
     });
