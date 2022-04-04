@@ -13,37 +13,43 @@ function status() {
             }
         });
 }
-status();
 // Context menu
 const myContextMenu = new window.VanillaContextMenu({
     scope: document.body,
     menuItems: [
         {
             label: "Refresh Status",
-            callback: status,
+            callback: refresh,
             preventCloseOnClick: false,
         },
     ],
     preventCloseOnClick: true,
 });
 // Titles
-fetch("https://api.statify.live/youtube/UCh--dzF5q_VM5HCrRJN1t2w")
-    .then((response) => response.json())
-    .then((data) => {
-        document.getElementById("youtube").title = data;
-    });
-fetch("https://api.statify.live/discord/Grauj95zDw")
-    .then((response) => response.json())
-    .then((data) => {
-        document.getElementById("discord").title = data;
-    });
-fetch("https://api.statify.live/twitch/aFrenchCat")
-    .then((response) => response.json())
-    .then((data) => {
-        document.getElementById("twitch").title = data;
-    });
-fetch("https://api.statify.live/twitter/Fr3nch_C4t")
-    .then((response) => response.json())
-    .then((data) => {
-        document.getElementById("twitter").title = data;
-    });
+function titles() {
+    fetch("https://api.statify.live/youtube/UCh--dzF5q_VM5HCrRJN1t2w")
+        .then((response) => response.json())
+        .then((data) => {
+            document.getElementById("youtube").title = data;
+        });
+    fetch("https://api.statify.live/discord/Grauj95zDw")
+        .then((response) => response.json())
+        .then((data) => {
+            document.getElementById("discord").title = data;
+        });
+    fetch("https://api.statify.live/twitch/aFrenchCat")
+        .then((response) => response.json())
+        .then((data) => {
+            document.getElementById("twitch").title = data;
+        });
+    fetch("https://api.statify.live/twitter/Fr3nch_C4t")
+        .then((response) => response.json())
+        .then((data) => {
+            document.getElementById("twitter").title = data;
+        });
+}
+// Refresh Func
+function refresh() {
+    status();
+    titles();
+}
