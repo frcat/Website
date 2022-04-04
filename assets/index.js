@@ -53,3 +53,5 @@ function refresh() {
     status();
     titles();
 }
+// Init
+refresh()
