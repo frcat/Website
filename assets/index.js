@@ -32,3 +32,13 @@ const myContextMenu = new window.VanillaContextMenu({
         .then((data) => {
     document.getElementById("youtube").title = data
     });
+    fetch("https://api.statify.live/discord/Grauj95zDw")
+        .then((response) => response.json())
+        .then((data) => {
+    document.getElementById("discord").title = data
+    });
+    fetch("https://api.statify.live/twitch/aFrenchCat")
+        .then((response) => response.json())
+        .then((data) => {
+    document.getElementById("twitter").title = data
+    });
