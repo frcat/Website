@@ -20,10 +20,9 @@ const myContextMenu = new window.VanillaContextMenu({
         {
             label: "Refresh Status",
             callback: refresh,
-            preventCloseOnClick: false,
         },
     ],
-    preventCloseOnClick: true,
+    preventCloseOnClick: false,
 });
 // Refresh Func
 function refresh() {
