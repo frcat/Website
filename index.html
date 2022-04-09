@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,15 +13,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     </head>
 
-    <body>
+    <body src="./assets/space.svg">
         <div class="content">
             <a id="profilePicture" href="#popup">
-                <img id="pfp" src="https://github.com/French-Cat.png" alt="Profile Picture" style="border: 5px solid #747f8d;" />
+                <img id="userAvatar" src="./assets/loading.webp" alt="Profile Picture"
+                    style="border: 5px solid #747f8d;" />
             </a>
             <div class="overlay" id="popup">
                 <div class="popup">
                     <div class="popup-photo">
-                        <a href="https://github.com/French-Cat.png" target="_blank"> </a>
+                        <a href="https://github.com/French-Cat.png" id="avatar" target="_blank"> </a>
                     </div>
                     <div class="popup-quote">
                         You've met le french cat, now get ready for le french bat
@@ -28,14 +30,13 @@
                     <a class="popup-close" onclick="history.back()">&times;</a>
                 </div>
             </div>
-            <div id="userName">
-                French Cat#0002
-            </div>
+            <div id="userName"></div>
             <div id="links">
                 <a class="link" href="https://www.twitch.tv/afrenchcat" target="_blank" id="twitch">
                     <i class="fab fa-twitch">&nbsp;</i>
                 </a>
-                <a class="link" href="https://www.youtube.com/channel/UCh--dzF5q_VM5HCrRJN1t2w" target="_blank" id="youtube">
+                <a class="link" href="https://www.youtube.com/channel/UCh--dzF5q_VM5HCrRJN1t2w" target="_blank"
+                    id="youtube">
                     <i class="fab fa-youtube">&nbsp;</i>
                 </a>
                 <a class="link" href="https://github.com/French-Cat" target="_blank" id="github">
@@ -60,12 +61,11 @@
             <div id="hashtag">
                 #FRCat4Life
             </div>
-            <script data-goatcounter="https://frcat.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+            <script data-goatcounter="https://frcat.goatcounter.com/count" async
+                src="https://gc.zgo.at/count.js"></script>
             <script src="https://unpkg.com/vanilla-context-menu/dist/vanilla-context-menu.js"></script>
             <script src="assets/index.js"></script>
         </div>
-        <audio autoplay>
-  <source src="/assets/G42.mp3" type="audio/mpeg">
-</audio>
     </body>
+
 </html>

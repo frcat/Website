@@ -13,7 +13,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #000;
-    background-image: url("space.svg");
+    background-image: url("space.webp");
     background-size: 300px;
     background-repeat: repeat;
     padding: 0;
@@ -193,4 +193,11 @@ body {
 }
 html {
     overflow: hidden;
+}
+
+.contextMenuTheme {
+    border-radius: 10px;
+    color:white;
+    background-color: #272b2e;
+    text-align: center;
 }
