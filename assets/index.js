@@ -30,8 +30,7 @@ window.onload = () => {
                 } else {
                     UserObject.avatar = `https://cdn.discordapp.com/avatars/${userData.id}/${userData.avatar}.png`;
                 }
-                document.getElementById('userName').innerText =
-                    UserObject.username;
+                Typing(UserObject.username);
                 document.getElementById('userAvatar').src = UserObject.avatar;
                 console.log(UserObject.status);
                 if (UserObject.status == 'online') {
