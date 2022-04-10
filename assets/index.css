@@ -28,7 +28,7 @@ body {
     border-radius: 50%;
     -webkit-tap-highlight-color: transparent;
 }
-#userName {
+#text {
     color: var(--accentColor);
     font-size: 1rem;
     font-weight: 700;
