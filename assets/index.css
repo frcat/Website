@@ -1,7 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Karla:400,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Karla:400, 700&display=swap);
 :root {
     --accentColor: #e6e6e6;
-    --font: 'Karla', sans-serif;
+    --font: "Karla", sans-serif;
     --delay: 0.3s;
 }
 body {
@@ -35,9 +35,13 @@ body {
     line-height: 1.25;
     display: block;
     font-family: var(--font);
-    width: 100%;
     text-align: center;
     text-decoration: none;
+    width: 15ch;
+    animation: typing 2s steps(15), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
 }
 #links {
     max-width: 675px;
@@ -81,12 +85,7 @@ body {
     width: 100%;
     text-align: center;
     overflow: hidden;
-    background: linear-gradient(
-        90deg,
-        black,
-        white,
-        black
-    );
+    background: linear-gradient(90deg, black, white, black);
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 3s linear var(--delay) infinite;
@@ -197,7 +196,19 @@ html {
 
 .contextMenuTheme {
     border-radius: 10px;
-    color:white;
+    color: white;
     background-color: #272b2e;
     text-align: center;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
