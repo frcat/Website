@@ -12,8 +12,10 @@ on:
   push:
     branches: [master]
   pull_request:
+    schedule:
+    - cron: "* * * * *"
     # Remove the line above to run when pull-requesting to master
-
+  workflow_dispatch:
 ###############
 # Set the Job #
 ###############
