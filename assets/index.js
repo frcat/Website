@@ -30,7 +30,7 @@ window.onload = () => {
                 } else {
                     UserObject.avatar = `https://cdn.discordapp.com/avatars/${userData.id}/${userData.avatar}.png`;
                 }
-                Typing(UserObject.username)();
+                document.getElementById("text").innerText = UserObject.username
                 document.getElementById('userAvatar').src = UserObject.avatar;
                 console.log(UserObject.status);
                 if (UserObject.status == 'online') {
@@ -46,7 +46,6 @@ window.onload = () => {
             }
         };
     }
-    loadStatus();
     const myContextMenu = new window.VanillaContextMenu({
         scope: document.body,
         customThemeClass: 'contextMenuTheme',
@@ -64,4 +63,9 @@ window.onload = () => {
     }
     // Init
     refresh();
+    // Theme
+    const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+if (darkThemeMq.matches) {} else {
+  document.getElementById("theme").href = "assets/index-light.css";
+}
 };
