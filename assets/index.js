@@ -69,3 +69,10 @@ if (darkThemeMq.matches) {} else {
   document.getElementById("theme").href = "assets/index-light.css";
 }
 };
+// Twitch Player
+  var options = {
+    channel: "afrenchcat",
+    width: 1920,
+    height: 1080,
+  };
+  const player = new Twitch.Player("twitch", options);
