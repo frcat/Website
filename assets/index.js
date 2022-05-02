@@ -71,4 +71,4 @@ if (darkThemeMq.matches) {} else {
 // Quote
 fetch('https://raw.githubusercontent.com/French-Cat/French-Cat/main/README.md')
   .then(response => response.text())
-  .then(data => document.getElementById("quote") = data);
+  .then(data => document.getElementById("quote").InnerHTML = data);
