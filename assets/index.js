@@ -1,12 +1,11 @@
 'use strict';
 const whitelistedUsers = [
-    // set the users you want to display
     '811770910624579584',
 ];
 
 window.onload = () => {
     function loadStatus() {
-        const lanyardSocket = new WebSocket('wss://frcat.aspy.dev/socket'); //change this to the lanyard server or self host lanyard.
+        const lanyardSocket = new WebSocket('wss://frcat.aspy.dev/socket');
         lanyardSocket.onopen = () => {
             lanyardSocket.send(
                 JSON.stringify({
@@ -69,10 +68,7 @@ if (darkThemeMq.matches) {} else {
   document.getElementById("theme").href = "assets/index-light.css";
 }
 };
-// Twitch Player
-  var options = {
-    channel: "afrenchcat",
-    width: 1920,
-    height: 1080,
-  };
-  const player = new Twitch.Player("twitch", options);
+// Quote
+fetch('https://raw.githubusercontent.com/French-Cat/French-Cat/main/README.md')
+  .then(response => response.text())
+  .then(data => document.getElementById("quote") = data);
