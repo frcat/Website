@@ -5,7 +5,7 @@ const whitelistedUsers = [
 
 window.onload = () => {
     function loadStatus() {
-        const lanyardSocket = new WebSocket('wss://lanyard.frcat.api.aspy.dev/socket');
+        const lanyardSocket = new WebSocket('wss://api.aspy.dev/frcat/lanyard');
         lanyardSocket.onopen = () => {
             lanyardSocket.send(
                 JSON.stringify({
