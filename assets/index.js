@@ -64,11 +64,7 @@ window.onload = () => {
     refresh();
     // Theme
     const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
-if (darkThemeMq.matches) {} else {
-  document.getElementById("theme").href = "assets/index-light.css";
-}
+    if (darkThemeMq.matches) { } else {
+        document.getElementById("theme").href = "assets/index-light.css";
+    }
 };
-// Quote
-fetch('https://raw.githubusercontent.com/French-Cat/French-Cat/main/README.md')
-  .then(response => response.text())
-  .then(data => document.getElementById("quote").innerHTML = data);
