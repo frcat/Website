@@ -26,7 +26,10 @@ const data = {
   "platform": window.browser.platform.type || "?",
   "ref": new URLSearchParams(window.location.search).get("ref") || "?"
 }
-const options = {method: 'POST',body: JSON.stringify(data),headers: {'Content-Type': 'application/json'}}
-fetch("https://French-Cat.repl.co/post", options)
-    .then(res => res.json())
-    .then(res => console.log(res));
+fetch('https://example.com/profile', {
+  method: 'POST', // or 'PUT'
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(data),
+})
