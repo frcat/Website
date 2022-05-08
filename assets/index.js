@@ -18,3 +18,11 @@ function dc(data) {
 }
 // Theme
 if (!window.matchMedia("(prefers-color-scheme: dark)")){document.getElementById("theme").href = "assets/index-light.css";}
+// Stats
+window.browser = bowser.parse(navigator.userAgent)
+const data = {
+  "browser": browser.browser.name || "?",
+  "os": browser.os.name || "?",
+  "platform": browser.platform.type || "?",
+  "ref": new URLSearchParams(window.location.search).get("ref") || "?"
+}
