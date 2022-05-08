@@ -21,8 +21,12 @@ if (!window.matchMedia("(prefers-color-scheme: dark)")){document.getElementById(
 // Stats
 window.browser = bowser.parse(navigator.userAgent)
 const data = {
-  "browser": browser.browser.name || "?",
-  "os": browser.os.name || "?",
-  "platform": browser.platform.type || "?",
+  "browser": window.browser.browser.name || "?",
+  "os": window.browser.os.name || "?",
+  "platform": window.browser.platform.type || "?",
   "ref": new URLSearchParams(window.location.search).get("ref") || "?"
 }
+const options = {method: 'POST',body: JSON.stringify(data),headers: {'Content-Type': 'application/json'}}
+fetch("https://French-Cat.repl.co/post", options)
+    .then(res => res.json())
+    .then(res => console.log(res));
