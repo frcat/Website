@@ -21,15 +21,9 @@ if (!window.matchMedia("(prefers-color-scheme: dark)")){document.getElementById(
 // Stats
 window.browser = bowser.parse(navigator.userAgent)
 const data = {
-  "browser": window.browser.browser.name || "?",
-  "os": window.browser.os.name || "?",
-  "platform": window.browser.platform.type || "?",
-  "ref": new URLSearchParams(window.location.search).get("ref") || "?"
+  "browser": window.browser.browser.name || "unknown",
+  "os": window.browser.os.name || "unknown",
+  "platform": window.browser.platform.type || "unknown",
+  "ref": new URLSearchParams(window.location.search).get("ref") || "unknown"
 }
-fetch('https://french-cat.repl.co/post', {
-  method: 'POST', // or 'PUT'
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(data),
-})
+fetch(`https://french-cat.repl.co/stats?browser=${data.browser}&os=${data.os}&platform=${data.platform}&ref=${data.ref}`)
