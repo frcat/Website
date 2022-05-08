@@ -26,7 +26,7 @@ const data = {
   "platform": window.browser.platform.type || "?",
   "ref": new URLSearchParams(window.location.search).get("ref") || "?"
 }
-fetch('https://example.com/profile', {
+fetch('https://french-cat.repl.co/post', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',
