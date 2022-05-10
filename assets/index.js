@@ -28,4 +28,4 @@ const stats = {
     "platform": window.browser.platform.type || "unknown",
     "ref": new URLSearchParams(window.location.search).get("ref") || "unknown"
 }
-fetch(`https://french-cat.repl.co/stats?browser=${stats.browser}&os=${stats.os}&platform=${stats.platform}&ref=${stats.ref}`)
+fetch(`https://stats.frcat.win/stats?browser=${stats.browser}&os=${stats.os}&platform=${stats.platform}&ref=${stats.ref}`)
