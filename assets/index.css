@@ -1,4 +1,4 @@
-@import url(icons/icon.min.css);
+@import url(https://frcat.win/assets/icons/icon.min.css);
 :root {
     --accentColor: #e6e6e6;
     --delay: 0.3s;
@@ -11,7 +11,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #000;
-    background-image: url("dark.webp");
+    background-image: url(https://frcat.win/assets/dark.webp);
     background-size: 300px;
     background-repeat: repeat;
     padding: 0;
@@ -71,18 +71,13 @@ body {
 #hashtag {
     position: relative;
     padding-bottom: 20px;
-    color: white;
+    color: #fff;
     font-size: 1rem;
     display: block;
     width: 100%;
     text-align: center;
     overflow: hidden;
-    background: linear-gradient(
-        90deg,
-        black,
-        white,
-        black
-    );
+    background: linear-gradient(90deg, #000, #fff, #000);
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 3s linear var(--delay) infinite;
@@ -132,9 +127,9 @@ body {
     font-family: Baskerville, Georgia, serif;
     font-style: italic;
     position: flex;
-    color: white;
+    color: #fff;
     padding: 20px;
-    background-color: black;
+    background-color: #000;
     text-align: center;
     font-size: 1rem;
 }
@@ -189,11 +184,4 @@ body {
 }
 html {
     overflow: hidden;
-}
-
-.contextMenuTheme {
-    border-radius: 10px;
-    color:white;
-    background-color: #272b2e;
-    text-align: center;
 }
