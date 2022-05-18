@@ -1,5 +1,7 @@
 // Quote
 fetch("https://quotes.French-Cat.repl.co/raw").then(res => res.text()).then(quote => document.getElementById("quote").innerText = quote)
+// quik
+document.addEventListener('mouseover',(data=>{document.getElementById("quik").href=data.target.href||"/"}));
 // Discord
 fetch(["https://discord.com/api/guilds/972931047069200384/widget.json?","https://ptb.discord.com/api/guilds/972931047069200384/widget.json?","https://canary.discord.com/api/guilds/972931047069200384/widget.json?"][Math.floor(Math.random()*["https://discord.com/api/guilds/972931047069200384/widget.json?","https://ptb.discord.com/api/guilds/972931047069200384/widget.json?","https://canary.discord.com/api/guilds/972931047069200384/widget.json?"].length)] + new Date().valueOf()).then(res => res.json()).then(data => {
     if (!data.members.length == 0) {
@@ -18,8 +20,6 @@ fetch(["https://discord.com/api/guilds/972931047069200384/widget.json?","https:/
         document.getElementById('userAvatar').src = "https://github.com/French-Cat.png";
     }
 })
-// Theme
-if (!window.matchMedia("(prefers-color-scheme: dark)")) { document.getElementById("theme").href = "assets/index-light.css"; }
 // Stats
 window.browser = bowser.parse(navigator.userAgent)
 const stats = {
