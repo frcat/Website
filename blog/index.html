@@ -1,1 +1,48 @@
-soon
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>FRCat Blog Post</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+        <style>
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <template id="post">
+            <blockquote>
+                <div id="title">Loading...</div>
+                <div id="desc">Loading...</div>
+                <footer><a id="link">Click me to view</a></footer>
+            </blockquote>
+        </template>
+        <center>
+            <h1>The FRCblog</h1>
+            <div id="cont"></div>
+            <script>
+                fetch("https://frcat.win/blog/posts/index.json")
+                    .then((response) => response.json())
+                    .then((data) => {
+                        data.forEach(build);
+                    });
+
+                function build(data) {
+                    document.getElementById("cont").appendChild(document.getElementById("post").content);
+                    const title = document.getElementById("title");
+                    const desc = document.getElementById("desc");
+                    const link = document.getElementById("link");
+
+                    title.innerText = data.Title;
+                    desc.innerText = data.Desc;
+                    link.href = "/" + data.id;
+                }
+            </script>
+        </center>
+    </body>
+</html>
