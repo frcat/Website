@@ -24,7 +24,7 @@
                   .then(response => response.text())
                   .then(data => {
                     if (!data.ok) {
-                      window.location.href = "https://frcat.win/blog/"
+                      //window.location.href = "https://frcat.win/blog/"
                     } else {
                       document.body.innerHTML = new showdown.Converter().makeHtml(data);
                 twemoji.parse(document);
