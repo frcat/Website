@@ -1,7 +1,12 @@
 [
   {
+    "Title": "FRCat has joined the chat",
+    "Desc": "A new social account you say?",
+    "id": 2
+  },
+  {
     "Title": "A new blog",
     "Desc": "All about this new blog",
     "id": 1
-  }
+  },
 ]
