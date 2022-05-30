@@ -21,15 +21,15 @@
     <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
     <script>
         fetch(window.location.href.replace("https://frcat.win/blog/", "https://raw.githubusercontent.com/frcat/Website/main/blog/posts/") + ".md")
-          .then(response => response.text())
-          .then(data => {
-            if (!data.ok) {
-              window.location.href = "https://frcat.win/blog/"
-            } else {
-              document.body.innerHTML = new showdown.Converter().makeHtml(data));
-        twemoji.parse(document);
-            }
-          }
+                  .then(response => response.text())
+                  .then(data => {
+                    if (!data.ok) {
+                      window.location.href = "https://frcat.win/blog/"
+                    } else {
+                      document.body.innerHTML = new showdown.Converter().makeHtml(data);
+                twemoji.parse(document);
+                    }
+                  })
     </script>
 </body>
 
