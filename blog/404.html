@@ -20,13 +20,7 @@
         <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
         <script>
             fetch(window.location.href.replace("https://frcat.win/blog/", "https://raw.githubusercontent.com/frcat/Website/main/blog/posts/") + ".md")
-                .then((resp) => {
-                    if (resp.ok) {
-                        resp.text();
-                    } else {
-                        window.location.href = "https://frcat.win/blog/";
-                    }
-                })
+                .then((resp) => resp.text())
                 .then((data) => {
                     document.body.innerHTML = new showdown.Converter().makeHtml(data);
                     twemoji.parse(document);
