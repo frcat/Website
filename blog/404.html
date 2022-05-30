@@ -23,7 +23,7 @@
                 .then((resp) => resp.text())
                 .then((data) => {
                 if(data=="404: Not Found"){window.location.href="https://frcat.win/blog/"}
-                    document.body.innerHTML = new showdown.Converter().makeHtml("<center>"+data+"</center>");
+                    document.body.innerHTML = "<center>" +  new showdown.Converter().makeHtml(data) + "</center>"
                     twemoji.parse(document);
                 });
         </script>
