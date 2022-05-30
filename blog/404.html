@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>FRCat Blog Post</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+        <style>
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>FRCat Blog Post</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-    <style>
-        html,
-        body {
-          height: 100%;
-          width: 100%;
-        }
-    </style>
-</head>
-
-<body>
-    Hello world
-    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
-    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-    <script>
-        fetch(window.location.href.replace("https://frcat.win/blog/", "https://raw.githubusercontent.com/frcat/Website/main/blog/posts/") + ".md")
-                  .then(response => response.text())
-                  .then(data => {
-                    if (!data.ok) {
-                      //window.location.href = "https://frcat.win/blog/"
+    <body>
+        Hello world
+        <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+        <script>
+            fetch(window.location.href.replace("https://frcat.win/blog/", "https://raw.githubusercontent.com/frcat/Website/main/blog/posts/") + ".md")
+                .then((resp) => {
+                    if (resp.ok) {
+                        resp.text();
                     } else {
-                      document.body.innerHTML = new showdown.Converter().makeHtml(data);
-                twemoji.parse(document);
+                        window.location.href = "https://frcat.win/blog/";
                     }
-                  })
-    </script>
-</body>
-
+                })
+                .then((data) => {
+                    document.body.innerHTML = new showdown.Converter().makeHtml(data);
+                    twemoji.parse(document);
+                });
+        </script>
+    </body>
 </html>
