@@ -19,7 +19,7 @@
         <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
         <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
         <script>
-            fetch(window.location.href.replace("https://frcat.win/blog/", "https://raw.githubusercontent.com/frcat/Website/main/blog/posts/") + ".md")
+            fetch(window.location.href.replace("https://frcat.win/blog/", "https://frcat.win/blog/posts/") + ".md")
                 .then((resp) => resp.text())
                 .then((data) => {
                 if(data=="404: Not Found"){window.location.href="https://frcat.win/blog/"}
