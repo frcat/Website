@@ -30,7 +30,7 @@
                 fetch(window.location.href.replace("https://frcat.win/blog/", "https://frcat.win/blog/posts/") + ".md")
                 .then((resp) => resp.text())
                 .then((data) => {
-                if(data=="404: Not Found"){window.location.href="https://frcat.win/blog/"}
+                if(data==window.404){window.location.href="https://frcat.win/blog/"}
                     document.body.innerHTML = "<center><a href=\".\" style=\"font-size:150%\">🔙</a>" +  new showdown.Converter().makeHtml(data) + "</center>"
                     twemoji.parse(document);
                 });
