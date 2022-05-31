@@ -1,5 +1,10 @@
 [
   {
+    "Title": "Server Changes",
+    "Desc": "Discord server updates",
+    "id": 3
+  },
+  {
     "Title": "FRCat has joined the chat",
     "Desc": "A new social account you say?",
     "id": 2
