@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>FRCat Blog Post</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+        <style>
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        Blog post is loading...
+        <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+        <script>
+
+                            fetch("https://frcat.win/blog/404.txt")
+                .then((resp) => resp.text())
+                .then((data) => {
+                            window.404 = data
+                            getPost()
+                            });
+            function getPost() {
+                fetch(window.location.href.replace("https://frcat.win/blog/", "https://frcat.win/blog/posts/") + ".md")
+                .then((resp) => resp.text())
+                .then((data) => {
+                if(data=="404: Not Found"){window.location.href="https://frcat.win/blog/"}
+                    document.body.innerHTML = "<center><a href=\".\" style=\"font-size:150%\">🔙</a>" +  new showdown.Converter().makeHtml(data) + "</center>"
+                    twemoji.parse(document);
+                });
+            }
+        </script>
+    </body>
+</html>
