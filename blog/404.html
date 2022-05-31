@@ -19,13 +19,22 @@
         <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
         <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
         <script>
-            fetch(window.location.href.replace("https://frcat.win/blog/", "https://frcat.win/blog/posts/") + ".md")
+
+                            fetch("https://frcat.win/blog/404.txt")
+                .then((resp) => resp.text())
+                .then((data) => {
+                            window.404 = data
+                            getPost()
+                            });
+            function getPost() {
+                fetch(window.location.href.replace("https://frcat.win/blog/", "https://frcat.win/blog/posts/") + ".md")
                 .then((resp) => resp.text())
                 .then((data) => {
                 if(data=="404: Not Found"){window.location.href="https://frcat.win/blog/"}
                     document.body.innerHTML = "<center><a href=\".\" style=\"font-size:150%\">🔙</a>" +  new showdown.Converter().makeHtml(data) + "</center>"
                     twemoji.parse(document);
                 });
+            }
         </script>
     </body>
 </html>
