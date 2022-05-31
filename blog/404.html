@@ -15,26 +15,16 @@
     </head>
 
     <body>
-        Blog post is loading...
+        Blog post is loading... ( Or you have found a <a href="https://http.cat/404">404</a> )
         <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
         <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
         <script>
-
-                            fetch("https://frcat.win/blog/404.txt")
+            fetch(window.location.href.replace("https://frcat.win/blog/", "https://frcat.win/blog/posts/") + ".md")
                 .then((resp) => resp.text())
                 .then((data) => {
-                            window.404 = data
-                            getPost()
-                            });
-            function getPost() {
-                fetch(window.location.href.replace("https://frcat.win/blog/", "https://frcat.win/blog/posts/") + ".md")
-                .then((resp) => resp.text())
-                .then((data) => {
-                if(data==window.404){window.location.href="https://frcat.win/blog/"}
-                    document.body.innerHTML = "<center><a href=\".\" style=\"font-size:150%\">🔙</a>" +  new showdown.Converter().makeHtml(data) + "</center>"
+                    document.body.innerHTML = '<center><a href="." style="font-size:150%">🔙</a>' + new showdown.Converter().makeHtml(data) + "</center>";
                     twemoji.parse(document);
                 });
-            }
         </script>
     </body>
 </html>
