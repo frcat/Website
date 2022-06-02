@@ -12,7 +12,7 @@ function build(data) {
 
     title.innerText = data.Title;
     desc.innerText = data.Desc;
-    link.href = data.id;
+    link.href = "https://frcat.win/blog/" + data.id;
     title.id = data.id;
     desc.id = data.id;
     link.id = data.id;
