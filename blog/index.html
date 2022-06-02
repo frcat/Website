@@ -5,14 +5,9 @@
         <meta name="viewport" content="width=device-width" />
         <title>FRCat Blog Post</title>
         <link rel="icon" href="favicon.svg" type="image/svg+xml">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
-        <style>
-            html,
-            body {
-                height: 100%;
-                width: 100%;
-            }
-        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css" />
+        <base href="https://cdn.jsdelivr.net/gh/frcat/Website" target="_blank">
+        <style>html,bodyheight:100%;width:100%;}</style>
     </head>
 
     <body>
@@ -26,27 +21,7 @@
         <center>
             <h1>The FRCblog</h1>
             <div id="cont"></div>
-            <script>
-                fetch("https://frcat.win/blog/posts/index.json")
-                    .then((response) => response.json())
-                    .then((data) => {
-                        data.forEach(build);
-                    });
-
-                function build(data) {
-                    document.getElementById("cont").innerHTML += document.getElementById("post").innerHTML
-                    const title = document.getElementById("title");
-                    const desc = document.getElementById("desc");
-                    const link = document.getElementById("link");
-
-                    title.innerText = data.Title;
-                    desc.innerText = data.Desc;
-                    link.href = data.id;
-                    title.id = data.id;
-                    desc.id = data.id;
-                    link.id = data.id;
-                }
-            </script>
+            <script src="index.js"></script>
         </center>
     </body>
 </html>
