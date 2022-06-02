@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width" />
         <title>FRCat Blog Post</title>
         <link rel="icon" href="favicon.svg" type="image/svg+xml">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css" />
         <style>
             html,
             body {
@@ -19,13 +19,6 @@
         Blog post is loading... ( Or you have found a <a href="https://http.cat/404">404</a> )
         <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
         <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-        <script>
-            fetch(window.location.href.replace("https://frcat.win/blog/", "https://frcat.win/blog/posts/") + ".md")
-                .then((resp) => resp.text())
-                .then((data) => {
-                    document.body.innerHTML = '<center><a href="." style="font-size:150%">🔙</a>' + new showdown.Converter().makeHtml(data) + "</center>";
-                    twemoji.parse(document);
-                });
-        </script>
+        <script src="assets/404.min.js"></script>
     </body>
 </html>
