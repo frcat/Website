@@ -57,6 +57,8 @@ body {
     padding: 10px;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
+    transition: color 0.5s ease;
+    transition: background-color 0.5s ease;
 }
 @media (hover: hover) {
     .link:hover {
@@ -77,21 +79,8 @@ body {
     width: 100%;
     text-align: center;
     overflow: hidden;
-    background: linear-gradient(90deg, #000, #fff, #000);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 3s linear var(--delay) infinite;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-}
-@keyframes animate {
-    0% {
-        background-position: -500%;
-    }
-    100% {
-        background-position: 500%;
-    }
+    transition: color 1s ease;
+    transition: text-shadow 1s ease;
 }
 .overlay {
     display: flex;
