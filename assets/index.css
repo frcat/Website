@@ -26,6 +26,9 @@ body {
     border-radius: 50%;
     -webkit-tap-highlight-color: transparent;
 }
+#userAvatar {
+    transition: border 1s ease;
+}
 #text {
     color: var(--accentColor);
     font-size: 1rem;
