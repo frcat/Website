@@ -1,10 +1,10 @@
 const widget = ["https://discord.com/api/guilds/972931047069200384/widget.json?", "https://ptb.discord.com/api/guilds/972931047069200384/widget.json?", "https://canary.discord.com/api/guilds/972931047069200384/widget.json?"]
 // Links
-fetch("links.min.json")
+fetch("links.json")
     .then(res => res.json())
     .then(data => {
         data.forEach(ldata => {
-            document.getElemenetById("links").innerHTML += document.getElementById("link").innerHTML
+            document.getElementById("links").innerHTML += document.getElementById("link").innerHTML
             document.getElementById("href").href = ldata.href
             document.getElementById("icon").classList.add(ldata.icon)
             document.getElementById("href").id = ldata.icon
