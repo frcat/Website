@@ -1,6 +1,6 @@
 const widget = ["https://discord.com/api/guilds/972931047069200384/widget.json?", "https://ptb.discord.com/api/guilds/972931047069200384/widget.json?", "https://canary.discord.com/api/guilds/972931047069200384/widget.json?"]
 // Links
-fetch("links.json")
+fetch("assets/links.json")
     .then(res => res.json())
     .then(data => {
         data.forEach(ldata => {
