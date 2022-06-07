@@ -1,5 +1,15 @@
 [
   {
+    "Title": "iOS16",
+    "Desc": "👀",
+    "id": 5
+  },
+  {
+    "Title": "eKV",
+    "Desc": "The local KV database",
+    "id": 4
+  },
+  {
     "Title": "Server Changes",
     "Desc": "Discord server updates",
     "id": 3
