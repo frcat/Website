@@ -33,10 +33,3 @@ fetch(widget[Math.floor(Math.random() * widget.length)] + new Date().valueOf()).
 })
 // Quote
 fetch("https://quotes.French-Cat.repl.co/raw").then(res => res.text()).then(quote => document.getElementById("quote").innerText = quote)
-// Hashtag
-function color() {
-    var item = ['#e74c3c', '#8e44ad', '#3498db', '#e67e22', '#2ecc71'][Math.floor(Math.random() * ['#e74c3c', '#8e44ad', '#3498db', '#e67e22', '#2ecc71'].length)];
-    document.getElementById("hashtag").style = `color:${item};text-shadow:2px 2px 2px ${item};`
-}
-color()
-setInterval(color, 1050)

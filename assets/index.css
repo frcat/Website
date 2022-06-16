@@ -1,4 +1,5 @@
-@import url(https://frcat.win/assets/icons/iconly.min.css);
+@import url(icons/iconly.min.css);
+@import url(hashtag.css);
 :root {
     --accentColor: #e6e6e6;
     --delay: 0.3s;
@@ -11,9 +12,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: #000;
-    background-image: url(https://frcat.win/assets/dark.webp);
-    background-size: 300px;
-    background-repeat: repeat;
     padding: 0;
 }
 #profilePicture,
@@ -27,10 +25,10 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 #userAvatar {
-    transition: border 1s ease;
-    -webkit-transition: border 1s ease;
-    -moz-transition: border 1s ease;
-    -o-transition: border 1s ease;
+    transition: border 2s ease;
+    -webkit-transition: border 2s ease;
+    -moz-transition: border 2s ease;
+    -o-transition: border 2s ease;
 }
 #text {
     color: var(--accentColor);
@@ -63,14 +61,6 @@ body {
     padding: 10px;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
-    transition: color 0.5s ease;
-    transition: background-color 0.5s ease;
-    -webkit-transition: background-color 0.5s ease;
-    -moz-transition: background-color 0.5s ease;
-    -o-transition: background-color 0.5s ease;
-    -webkit-transition: color 0.5s ease;
-    -moz-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
 }
 @media (hover: hover) {
     .link:hover {
@@ -91,14 +81,6 @@ body {
     width: 100%;
     text-align: center;
     overflow: hidden;
-    transition: text-shadow 1s ease;
-    -webkit-transition: text-shadow 1s ease;
-    -moz-transition: text-shadow 1s ease;
-    -o-transition: text-shadow 1s ease;
-    transition: color 1s ease;
-    -webkit-transition: color 1s ease;
-    -moz-transition: color 1s ease;
-    -o-transition: color 1s ease;
 }
 .overlay {
     display: flex;
@@ -114,10 +96,6 @@ body {
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
-    transition: 0.5s ease-in-out;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
 }
 .popup {
     position: relative;
@@ -131,10 +109,6 @@ body {
     margin: 56px;
     background-color: var(--accentColor);
     transform: scale(0);
-    transition: 0.5s ease-in-out;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
 }
 .popup-quote {
     font-family: Baskerville, Georgia, serif;
