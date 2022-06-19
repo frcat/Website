@@ -11,7 +11,7 @@ fetch("assets/links.json")
         });
     });
 // Discord
-fetch("https://canary.discord.com/api/guilds/966332825492160542/widget.json" + new Date().valueOf())
+fetch("https://canary.discord.com/api/guilds/966332825492160542/widget.json?" + new Date().valueOf())
     .then((res) => res.json())
     .then((data) => {
         if (!data.members.length == 0) {
