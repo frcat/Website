@@ -1,7 +1,7 @@
 @import url(icons/iconly.min.css);
 @import url(hashtag.css);
 :root {
-    --accentColor: #e6e6e6;
+    --accentColor: #DEDEDE;
     --delay: 0.3s;
 }
 body {
