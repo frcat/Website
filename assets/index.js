@@ -1,20 +1,19 @@
-const widget = ["https://discord.com/api/guilds/972931047069200384/widget.json?", "https://ptb.discord.com/api/guilds/972931047069200384/widget.json?", "https://canary.discord.com/api/guilds/972931047069200384/widget.json?"]
 // Links
 fetch("assets/links.json")
     .then(res => res.json())
     .then(data => {
-        data.forEach(ldata => {
+        data.forEach(link => {
             document.getElementById("links").innerHTML += document.getElementById("link").innerHTML
-            document.getElementById("href").href = ldata.href
-            document.getElementById("icon").classList.add(ldata.icon)
-            document.getElementById("href").id = ldata.icon
-            document.getElementById("icon").id = ldata.icon
+            document.getElementById("href").href = link.href
+            document.getElementById("icon").classList.add(link.icon)
+            document.getElementById("href").id = link.icon
+            document.getElementById("icon").id = link.icon
         }
         )
     }
     )
 // Discord
-fetch(widget[Math.floor(Math.random() * widget.length)] + new Date().valueOf()).then(res => res.json()).then(data => {
+fetch("https://canary.discord.com/api/guilds/966332825492160542/widget.json" + new Date().valueOf()).then(res => res.json()).then(data => {
     if (!data.members.length == 0) {
         document.getElementById('userAvatar').src = data.members[0].avatar_url + "?size=1024";
         if (data.members[0].status == 'online') {
