@@ -40,7 +40,7 @@ const socialMsg = (icon, link) => {
     document.getElementById("links").innerHTML += `<a href="${link}"><i class="${icon}">&nbsp;</i></a>`
 }
 
-fetch("util/links.json")
+fetch("assets/util/links.json")
     .then((res) => res.json())
     .then((data) => {
         data.forEach((link) => {
