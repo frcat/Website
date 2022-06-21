@@ -37,7 +37,7 @@ function now() {
     })
 }
 const socialMsg = (icon, link) => {
-    document.getElementById("links").innerHTML += `<a href="${link}">${icon}</a>`
+    document.getElementById("links").innerHTML += `<a href="${link}">${icon}</a><br><br>`
 }
 
 fetch("assets/util/links.json")
