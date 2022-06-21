@@ -9,7 +9,7 @@ const addMessage = (pfp, name, msg, time, id) => {
     messageElement.innerHTML = `
     <div class="flex w-full group-scope justify-start hover:bg-discord-600 text-white text-sm py-2 mb-1">
         <div class="mx-3">
-            <img class="rounded-full w-12" src="${pfp}">
+            <img alt="profile picture" class="rounded-full w-12" src="${pfp}">
         </div>
         <div class="w-11/12 flex flex-col justify-start gap-0">
             <div class="pr-4 break-words" id="${id || "usr-msg"}">
@@ -37,7 +37,7 @@ function now() {
     })
 }
 const socialMsg = (icon, link) => {
-    document.getElementById("links").innerHTML += `<a href="${link}"><i class="${icon}">&nbsp;</i></a>`
+    document.getElementById("links").innerHTML += `<a href="${link}"><img alt="icon" class="icon" src="assets/icons/${icon}"></img></a>`
 }
 
 fetch("assets/util/links.json")
@@ -48,4 +48,4 @@ fetch("assets/util/links.json")
         });
     });
 
-addMessage("https://github.com/French-Cat.png", "FRCat", "", now(), "links")
+addMessage("assets/img/pfp.webp", "FRCat", "", now(), "links")
