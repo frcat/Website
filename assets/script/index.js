@@ -40,7 +40,7 @@ const socialMsg = (icon, link) => {
     document.getElementById("links").innerHTML += `<a href="${link}"><i class="${icon}">&nbsp;</i></a>`
 }
 
-fetch("https://frcat.win/assets/links.json")
+fetch("util/links.json")
     .then((res) => res.json())
     .then((data) => {
         data.forEach((link) => {
