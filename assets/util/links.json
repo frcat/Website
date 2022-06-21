@@ -1,13 +1,36 @@
 [
-    { "href": "https://frcat.win/blog", "icon": "  Blog  " },
-    { "href": "https://www.buymeacoffee.com/afrenchcat", "icon": "  Buy Me A Coffee  " },
-    { "href": "https://discord.gg/KnaQPTSZ8R", "icon": "  Discord  " },
-    { "href": "https://github.com/French-Cat", "icon": "  Github  " },
-    { "href": "https://www.reddit.com/user/aFrenchCat", "icon": "  Reddit  " },
-    { "href": "https://open.spotify.com/user/31gfspj2kdcvs4yiy3ma4amrjtr4", "icon": "  Spotify  " },
-    { "href": "https://steamcommunity.com/id/frcat", "icon": "  Steam  " },
-    { "href": "https://www.twitch.tv/afrenchcat", "icon": "  Twitch  " },
-    { "href": "https://www.tiktok.com/@afrcat", "icon": "  Tiktok  " },
-    { "href": "https://twitter.com/afrenchcat", "icon": "  Twitter  " },
-    { "href": "https://www.youtube.com/channel/UCh--dzF5q_VM5HCrRJN1t2w", "icon": "  Youtube  " }
+    {
+        "href": "https://frcat.win/blog",
+        "icon": "__Blog__"
+    }, {
+        "href": "https://www.buymeacoffee.com/afrenchcat",
+        "icon": "__Buy Me A Coffee__"
+    }, {
+        "href": "https://discord.gg/KnaQPTSZ8R",
+        "icon": "__Discord__"
+    }, {
+        "href": "https://github.com/French-Cat",
+        "icon": "__Github__"
+    }, {
+        "href": "https://www.reddit.com/user/aFrenchCat",
+        "icon": "__Reddit__"
+    }, {
+        "href": "https://open.spotify.com/user/31gfspj2kdcvs4yiy3ma4amrjtr4",
+        "icon": "__Spotify__"
+    }, {
+        "href": "https://steamcommunity.com/id/frcat",
+        "icon": "__Steam__"
+    }, {
+        "href": "https://www.twitch.tv/afrenchcat",
+        "icon": "__Twitch__"
+    }, {
+        "href": "https://www.tiktok.com/@afrcat",
+        "icon": "__Tiktok__"
+    }, {
+        "href": "https://twitter.com/afrenchcat",
+        "icon": "__Twitter__"
+    }, {
+        "href": "https://www.youtube.com/channel/UCh--dzF5q_VM5HCrRJN1t2w",
+        "icon": "__Youtube__"
+    }
 ]
