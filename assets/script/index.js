@@ -3,7 +3,6 @@ const form = document.querySelector("form");
 const textbox = document.querySelector('input[type="text"]');
 const messageContainer = document.querySelector("#message-container");
 const submitMessage = document.querySelector('button[type="submit"]');
-const showDown = new showdown.Converter();
 const addMessage = (pfp, name, msg, time, id) => {
     const messageElement = document.createElement("div");
     messageElement.innerHTML = `
