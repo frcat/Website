@@ -9,7 +9,7 @@ const addMessage = (pfp, name, msg, time, id) => {
     messageElement.innerHTML = `
     <div class="flex w-full group-scope justify-start hover:bg-discord-600 text-white text-sm py-2 mb-1">
         <div class="mx-3">
-            <img alt="profile picture" class="rounded-full w-12" src="${pfp}">
+            <img alt="profile picture" class="rounded-full w-12" src="${pfp}" width="48" height="48">
         </div>
         <div class="w-11/12 flex flex-col justify-start gap-0">
             <div class="pr-4 break-words" id="${id || "usr-msg"}">
