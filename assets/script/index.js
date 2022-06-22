@@ -24,6 +24,7 @@ const addMessage = (pfp, name, msg, time, id) => {
 
 form.onsubmit = (event) => {
     event.preventDefault();
+    if (textbox.value == "")_ return;
     addMessage("assets/img/user.svg", "User", textbox.value, now())
     textbox.value = ""
 };
