@@ -1,36 +1,54 @@
 [
     {
-        "href": "https://frcat.win/blog",
-        "icon": "Blog"
-    }, {
-        "href": "https://www.buymeacoffee.com/afrenchcat",
-        "icon": "Buy Me A Coffee"
-    }, {
-        "href": "https://discord.gg/KnaQPTSZ8R",
-        "icon": "Discord"
-    }, {
-        "href": "https://github.com/French-Cat",
-        "icon": "Github"
-    }, {
-        "href": "https://www.reddit.com/user/aFrenchCat",
-        "icon": "Reddit"
-    }, {
-        "href": "https://open.spotify.com/user/31gfspj2kdcvs4yiy3ma4amrjtr4",
-        "icon": "Spotify"
-    }, {
-        "href": "https://steamcommunity.com/id/frcat",
-        "icon": "Steam"
-    }, {
-        "href": "https://www.twitch.tv/afrenchcat",
-        "icon": "Twitch"
-    }, {
-        "href": "https://www.tiktok.com/@afrcat",
-        "icon": "Tiktok"
-    }, {
-        "href": "https://twitter.com/afrenchcat",
-        "icon": "Twitter"
-    }, {
-        "href": "https://www.youtube.com/channel/UCh--dzF5q_VM5HCrRJN1t2w",
-        "icon": "Youtube"
+        "icon": "Blog",
+        "href": "https://frcat.win/blog"
+    },
+    {
+        "icon": "Portfolio",
+        "href": "https://frcat.win/portfolio"
+    },
+    {
+        "icon": "Buy Me A Coffee",
+        "href": "https://www.buymeacoffee.com/afrenchcat"
+    },
+    {
+        "icon": "Discord",
+        "href": "https://discord.gg/KnaQPTSZ8R"
+    },
+    {
+        "icon": "GitHub",
+        "href": "https://github.com/French-Cat"
+    },
+    {
+        "icon": "Reddit",
+        "href": "https://www.reddit.com/user/aFrenchCat"
+    },
+    {
+        "icon": "Spotify",
+        "href": "https://open.spotify.com/user/31gfspj2kdcvs4yiy3ma4amrjtr4"
+    },
+    {
+        "icon": "Steam",
+        "href": "https://steamcommunity.com/id/frcat"
+    },
+    {
+        "icon": "Twitch",
+        "href": "https://www.twitch.tv/afrenchcat"
+    },
+    {
+        "icon": "Tiktok",
+        "href": "https://www.tiktok.com/@afrcat"
+    },
+    {
+        "icon": "Twitter",
+        "href": "https://twitter.com/afrenchcat"
+    },
+    {
+        "icon": "Youtube",
+        "href": "https://www.youtube.com/channel/UCh--dzF5q_VM5HCrRJN1t2w"
+    },
+    {
+        "icon": "LastFM",
+        "href": "https://www.last.fm/user/frcat"
     }
 ]

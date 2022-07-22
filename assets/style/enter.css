@@ -1,0 +1,38 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+html {
+    background-color: rgb(55 57 62 / 1);
+    color: rgb(255 255 255 / 1);
+    overflow: hidden;
+}
+
+body {
+    opacity: 0;
+    transition: 1s;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.font {
+    font-family: "font";
+}
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: "font";
+    src: url("../font/Fira%20Code/FiraCode-Light.ttf") format("truetype");
+}

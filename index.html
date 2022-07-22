@@ -1,77 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" class="notranslate" translate="no">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="https://frcat.win/assets/img/pfp.webp" type="image/x-icon" />
-        <title>FRC Links</title>
-        <meta name="description" content="You've met le french cat, now get ready for le french bat" />
-        <meta content="https://github.com/French-Cat.png" property="og:image" />
-        <meta content="#2f3136" property="theme-color" />
-        <meta name="google" content="notranslate" />
-        <style>
-            html,
-            body {
-                height: 100%;
-                width: 100%;
-                margin: 0px;
-            }
 
-            html {
-                background-color: rgb(55 57 62 / 1);
-                color: rgb(255 255 255 / 1);
-                overflow: hidden;
-            }
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://frcat.win/assets/img/pfp.webp" type="image/x-icon" />
+    <title>FRC Links</title>
+    <meta name="description" content="You've met le french cat, now get ready for le french bat" />
+    <meta content="https://github.com/French-Cat.png" property="og:image" />
+    <meta content="#2f3136" property="theme-color" />
+    <meta name="google" content="notranslate" />
+    <link rel="stylesheet" href="assets/style/enter.css" />
+</head>
 
-            body {
-                opacity: 0;
-                transition: 1s;
-                font-size: 150%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+<body unselectable="on" class="unselectable">
+    <center>
+        <br />
+        <div title="French Cat">フランスの猫</div>
+        <br />
+        <div class="font" style="cursor: pointer;" onclick="clickd()">Click to Enter . . .</div>
+    </center>
+    <main></main>
+    <script src="assets/script/enter.js"></script>
+    <script src="assets/script/index.js"></script>
+</body>
 
-            .font {
-                font-family: "font";
-            }
-
-            .unselectable {
-                -moz-user-select: -moz-none;
-                -khtml-user-select: none;
-                -webkit-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
-
-            @font-face {
-                font-family: "font";
-                src: url("assets/font/Fira%20Code/FiraCode-Light.ttf") format("truetype");
-            }
-        </style>
-    </head>
-
-    <body unselectable="on" class="unselectable">
-        <center>
-            <br />
-            <div title="French Cat">フランスの猫</div>
-            <br />
-            <div class="font" style="cursor: pointer;" onclick="clickd()">Click to Enter . . .</div>
-        </center>
-        <iframe src="frame" style="border: 0px #ffffff none; display: none;" name="frc" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="100%" width="100%" allowfullscreen></iframe>
-        <script>
-            window.onload = function () {
-                document.body.style.opacity = 1;
-            };
-            function clickd() {
-                document.body.style.opacity = 0;
-                setTimeout(function () {
-                    document.getElementsByTagName("center")[0].innerHTML = "";
-                    document.getElementsByTagName("iframe")[0].style = "border:0px #ffffff none;";
-                    document.body.style.opacity = 1;
-                }, 2000);
-            }
-        </script>
-    </body>
 </html>
